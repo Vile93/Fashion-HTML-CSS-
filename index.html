@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Fashion</title>
 </head>
@@ -15,21 +16,39 @@
     <section class="main">
         <div class="container">
             <div class="header">
-                <img src="img/Logo.png" alt="Logo" class="logo">
-                    <div class="navbar">
-                    <a href="#" class="nav_panel">Home</a>
-                    <a href="#" class="nav_panel">Store</a>
-                    <a href="#" class="nav_panel">Blog</a>
-                    <a href="#" class="nav_panel">About</a>
-                    <a href="#" class="nav_panel">Contact</a>
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <div class="logo_wrapper d-flex justify-content-center">
+                            <a href="#" class="logo_link"><img src="img/Logo.png" alt="Logo" class="logo"></a>
+                        </div>
                     </div>
-                <img src="img/Search.png" alt="Search" class="search">
+                    <div class="col-6 offset-3">
+                        <div class="navbar d-flex justify-content-around">
+                            <a href="#" class="nav_panel">Home</a>
+                            <a href="#" class="nav_panel">Store</a>
+                            <a href="#" class="nav_panel">Blog</a>
+                            <a href="#" class="nav_panel">About</a>
+                            <a href="#" class="nav_panel">Contact</a>
+                            </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="search_wrapper d-flex justify-content-center">
+                            <a href="#" class="search_link"><img src="img/Search.png" alt="Search" class="search"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="content">
-                <h1 class="title">Today only
-                    70% off</h1>
-                <div class="text">Lorem ipsum dolor elit sit amet consectetur adipiscing elit vestibuet lorem odio luctus egestas sit amet eu libero fusce aliquet</div>
-                <button class="learn_more">Learn more</button>
+                <div class="row">
+                    <div class="col-7 offset-5">
+                        <div class="content_wrapper d-flex flex-column align-items-end" style="text-align: right;">
+                            <h1 class="title">Today only
+                                70% off</h1>
+                            <div class="text">Lorem ipsum dolor elit sit amet consectetur adipiscing elit vestibuet lorem odio luctus egestas sit amet eu libero fusce aliquet</div>
+                            <button class="learn_more">Learn more</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

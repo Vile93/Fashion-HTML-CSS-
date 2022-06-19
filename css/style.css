@@ -1,53 +1,28 @@
 * {
-    box-sizing:border-box;
-    margin: 0;
-    padding: 0;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
-.main {
-    min-height: 1080px;
-    background: url('../img/Background.jpg') center center/cover no-repeat;
-    padding: 124px 182px 222px 185px;   
-}
-.main .container {
-    width: 1554px;
-    margin: 0 auto;
-    height: 734px;
-    position: relative;
-}
-.header .search {
-    position: absolute;
-    right:0;
-    top:0;
+body {
+    background-image: url('../img/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    padding-top: 5%;
 }
 .header .navbar {
-    width: 560px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-left: 680px;
-    font-family: Montserrat;
     font-size: 30px;
     font-weight: 600;
-    position: absolute;
-    top: 0;
-    right: 146px;
 }
-.header .navbar a {
+.header .navbar .nav_panel {
     text-decoration: none;
 }
-.main .content {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    text-align: right;
-    margin-top: 220px;
+.content {
+    margin-top: 100px;
 }
 .content .title {
     margin: 0;
-    width: 818px;
-    font-family: Montserrat;
     font-size: 110px;
     font-weight: 800;
     font-stretch: normal;
@@ -57,9 +32,8 @@
     text-transform: uppercase;
   }
 .content .text {
-    margin-top: 49px;
+    margin-top: 50px;
     width: 635px;
-    font-family: Montserrat;
     font-size: 28px;
     font-weight: normal;
     font-stretch: normal;
@@ -68,11 +42,10 @@
     letter-spacing: normal;
   }
 .content .learn_more {
-    margin-top: 62px;
-    margin-right: 27px;
+    margin-top: 10%;
+    margin-right: 3%;
     width: 185px;
-    height: 54px;
-    font-family: Montserrat;
+    height: 55px;
     font-size: 20.5px;
     font-weight: bold;
     font-stretch: normal;
@@ -84,6 +57,6 @@
     color: #313130;
     outline: none;
     cursor:pointer;
-    border: 0;
+    border: none;
     text-transform: uppercase;
 }
